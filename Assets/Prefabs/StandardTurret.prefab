@@ -124,9 +124,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2366297628117500209}
+  - component: {fileID: 7522716011250605038}
   m_Layer: 0
-  m_Name: Turret
-  m_TagString: Enemy
+  m_Name: StandardTurret
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -147,6 +148,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7522716011250605038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3142694002059074443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d1da5013b5ae048816f6bff816ae4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 15
+  enemyTag: Enemy
+  partotoRotate: {fileID: 2836280794381189217}
+  turnSpeed: 10
+  fireRate: 1
+  bulletPrefab: {fileID: 5062918680162294959, guid: 32a018c2d3b71224391f1aa6ee7b9e67, type: 3}
+  firePoint: {fileID: 6947218985186498326}
 --- !u!1 &6641796100973104934
 GameObject:
   m_ObjectHideFlags: 0
