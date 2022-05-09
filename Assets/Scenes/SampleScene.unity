@@ -6108,7 +6108,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954699041}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
   m_Name: 
@@ -11696,7 +11696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turretnormalPrefab: {fileID: 3142694002059074443, guid: a8200343f4239ec40b174d13c57bc7a2, type: 3}
-  anotherturretPrefab: {fileID: 3142694002059074443, guid: 271411dc38b98e94ebd1450b3e1611fc, type: 3}
+  missilePrefab: {fileID: 1354549918137594588, guid: b46d877305d583349b289a2f1f514810, type: 3}
 --- !u!1001 &1736218877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11970,7 +11970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6138387812060007360, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AnotherRegularTurret
+      value: MissileTurret
       objectReference: {fileID: 0}
     - target: {fileID: 6138387812060007360, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -11979,6 +11979,14 @@ PrefabInstance:
     - target: {fileID: 6138387812060007360, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6138387812060007361, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
+      propertyPath: m_PreferredWidth
+      value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 6138387812060007361, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
+      propertyPath: m_PreferredHeight
+      value: 180.5105
       objectReference: {fileID: 0}
     - target: {fileID: 6138387812060007362, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
       propertyPath: m_Pivot.x
@@ -11998,7 +12006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6138387812060007362, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6138387812060007362, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
       propertyPath: m_AnchorMin.x
@@ -12006,7 +12014,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6138387812060007362, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6138387812060007362, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
       propertyPath: m_SizeDelta.x
@@ -12046,11 +12054,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6138387812060007362, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 185
       objectReference: {fileID: 0}
     - target: {fileID: 6138387812060007362, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -407.25522
       objectReference: {fileID: 0}
     - target: {fileID: 6138387812060007362, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12066,8 +12074,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6138387812060007363, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
       propertyPath: m_Name
-      value: AnotherTurret
+      value: MissileTurret
       objectReference: {fileID: 0}
+    - target: {fileID: 6138387812060007391, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a8a3c901c5694f947a87a97596af29dd, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
 --- !u!1001 &1756348982
@@ -14387,7 +14399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6138387812060007362, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6138387812060007362, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
       propertyPath: m_AnchorMin.x
@@ -14395,7 +14407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6138387812060007362, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6138387812060007362, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
       propertyPath: m_SizeDelta.x
@@ -14435,11 +14447,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6138387812060007362, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 149.79938
       objectReference: {fileID: 0}
     - target: {fileID: 6138387812060007362, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -226.74472
       objectReference: {fileID: 0}
     - target: {fileID: 6138387812060007362, guid: 96c013bb5903b7f42af2762c51220166, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -8,7 +8,7 @@ public class BuildManager : MonoBehaviour
 
     public GameObject turretnormalPrefab; 
     private GameObject buildTurret;
-    public GameObject anotherturretPrefab;
+    public GameObject missilePrefab;
     void Awake ()
     {
         if (instance != null)
