@@ -7,10 +7,11 @@ public class Node : MonoBehaviour
     public Color hoverColour;
     public Vector3 positionOffset;
 
-    private GameObject turret;
+    public GameObject turret;
 
     private Renderer rend;
     private Color startColour;
+
 
     BuildManager buildManager;
     void Start()
@@ -20,16 +21,21 @@ public class Node : MonoBehaviour
 
         buildManager = BuildManager.instance;
     }
+
+    public Vector3 GetBuildPosition()
+    {
+        return transform.position + positionOffset;
+    }
     void OnMouseEnter ()
     {
-        if (buildManager.getbuildTurret() == null)
+        if (!buildManager.CanBuild)
             return;
         rend.material.color = hoverColour;
     }
 
     void OnMouseDown()
     {
-        if (buildManager.getbuildTurret() == null)
+        if (!buildManager.CanBuild)
             return;
 
         if (turret != null)
@@ -38,8 +44,7 @@ public class Node : MonoBehaviour
             return;
         }
 
-        GameObject buildTurret = buildManager.getbuildTurret();
-        turret = (GameObject)Instantiate(buildTurret, transform.position + positionOffset, transform.rotation);
+        buildManager.BuildTurretOn(this);
     }
 
     void OnMouseExit()
