@@ -16,10 +16,7 @@ public class GameManager : MonoBehaviour
         if (gameisOver)
             return;
 
-        if (Input.GetKeyDown("e"))
-        {
-            EndGame();
-        }
+      
         if (PlayerStats.Lives <=0)
         {
             EndGame();
