@@ -6,9 +6,10 @@ public class BuildManager : MonoBehaviour
 {
     public static BuildManager instance;
 
-    public GameObject turretnormalPrefab; 
+     
     private TurretMoney buildTurret;
-    public GameObject missilePrefab;
+    
+    
     public bool CanBuild { get { return buildTurret != null; } }
     void Awake ()
     {
